@@ -1,152 +1,256 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <img src="imagen.png" alt="Logo del centro" width="200">
-        <form>
-            <fieldset>
-                <legend><strong>DATOS PERSONALES</strong></legend>
-                Nombre:
-                <input type="Text" name="Nombre"><br>
-                Apellidos:
-                <input type="Text" name="Apellidos"><br>
-                Apodo:
-                <input type="Text" name="Apodo"><br>
-                Usuario:
-                <input type="Text" name="Usuario">
-                Contraseña: 
-                <input type="Text" name="Contraseña"><br>
-                Telefono:
-                <input type="Text" name="Telefono">
-                Email:
-                <input type="email" name="Email"><br>
-                Fecha de nacimiento:
-                <input type="number" name="dias" min="1" max="31"> /
-                <select name="Meses">
-                    <option name="Enero">Enero</option>
-                    <option name="Febrero">Febrero</option>
-                    <option name="Marzo">Marzo</option>
-                    <option name="Abril">Abril</option>
-                    <option name="Mayo">Mayo</option>
-                    <option name="JUnio">Junio</option>
-                    <option name="Julio">Julio</option>
-                    <option name="AGosto">Agosto</option>
-                    <option name="Septiembre">Septiembre</option>
-                    <option name="Octubre">Octubre</option>
-                    <option name="Noviembre">Noviembre</option>
-                    <option name="Diciembre">Diciembre</option>
-                </select> /
-                <input type="number" name="año" min="1990" max="2024"> <br>
-                Últimos estudios completados: <br>
-                <select name="estudios" multiple;interes> 
-                    <option>E.S.O.</option>
-                    <option>F.P.B.</option>
-                    <option>C.F.G.M.</option>
-                    <option>C.F.G.S.</option>
-                    <option>UNIVERSITARIOS</option>
-                    <option>OTROS</option> 
-                </select> <br>
-                Suba una foto de tamaño DNI: 
-                <input type="file" name="myfile" value="File"> <br>
-                Carnet de conducir:
-                Sí
-                <input type="radio" name="carnet" value="Sí">
-                No
-                <input type="radio" name="carnet" value="NO">
-            </fieldset>
-            <fieldset>
-                <legend><strong>DATOS DE LOS PADRES</strong></legend>
-                Nombre del padre:
-                <input type="Text" name="Nombre del padre"> <br>
-                Estudios: 
-                <select name="estudios" multiple;interes> 
-                    <option>Sin información</option>
-                    <option>Formación Básica</option>
-                    <option>Enseñanza Secundaria</option>
-                    <option>Formación Universitaria</option>
-                    <option>No contesta</option>
-                </select> <br>
-                Situación laboral:
-                <select name="Situación laboral" multiple;interes> 
-                    <option>Autónomo</option>
-                    <option>En Paro</option>
-                    <option>Por Cuenta Ajena</option>
-                    <option>Tareas del hogar</option> 
-                </select> <br>
-               <br>
-                Nombre de la madre:
-                <input type="Text" name="Nombre de la madre"> <br>
-                Estudios: 
-                <select name="estudios" multiple;interes> 
-                    <option>Sin información</option>
-                    <option>Formación Básica</option>
-                    <option>Enseñanza Secundaria</option>
-                    <option>Formación Universitaria</option>
-                    <option>No contesta</option>
-                </select> <br>
-                Situación laboral:
-                <select name="Situación laboral" multiple;interes> 
-                    <option>Autónomo</option>
-                    <option>En Paro</option>
-                    <option>Por Cuenta Ajena</option>
-                    <option>Tareas del hogar</option> 
-                </select> <br>
-            </fieldset>
-            <fieldset>
-                <legend><strong>OPCIONES ACADEMICAS</strong></legend>
-                Elija especialidad a cursar: <br>
-                SMIR
-                <input type="radio" name="Grados" value="SMIR">
-                ASIR
-                <input type="radio" name="Grados" value="ASIR">
-                DAM
-                <input type="radio" name="Grados" value="DAM">
-                DAW
-                <input type="radio" name="Grados" value="DAW"> <br>
-                <br>
-                Horario de las clases:
-                <select name="horario de las clases" multiple;interes> 
-                    <option>Mañana</option>
-                    <option>Tarde</option>
-                    <option>Nocturno</option>
-                    <option>Indiferente</option> 
-                </select> <br>
-                Idioma de las clases:
-                <select name="idioma de las clases" multiple;interes> 
-                    <option>Modelo A</option>
-                    <option>Modelo B</option>
-                    <option>Modelo C</option>
-                    <option>Indiferente</option> 
-                </select> <br>
-                <br>
-                Elija una o varias asignaturas opcionales:<br>
-               
-                <input type="checkbox" id="lengua" name="asignatura" value="lengua">
-                Lengua
-                <input type="checkbox" id="matematicas" name="asignatura" value="matematicas">
-                Matemáticas
-                <input type="checkbox" id="historia" name="historia" value="historia">
-                Historia
-                <input type="checkbox" id="geografia" name="asignatura" value="Geografía">
-                Geografia <br>
-                <br>
-                <strong>Solicitar Cita Presencial:</strong><br>
-                Elija una hora: 
-                <input type="time" name="Hora"> <br>
-                Elija una fecha:
-                <input type="date" name="Fecha"><br>
-                <br>
-                <label for="beca">Información adicional:</label><br>
-                <select id="beca" name="beca" size="3">
-                    <option value="sin beca">Sin beca</option>
-                    <option value="con beca">Con beca</option>
-                    <option value="Pendiente beca">Pendiente de beca</option>
-                </select><br>
-                <br>
-            </fieldset>
-                <input type="checkbox" name="confirmar">
-                Confirmar selecciones y aceptar las condiciones <br>
-                <button type="submit">Guardar y Enviar</button>
-                <button type="reset">Borrar</button>      
-        </form>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Inscripción</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        form {
+            max-width: 900px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        fieldset {
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        legend {
+            color: #4CAF50;
+            font-size: 16px;
+            padding: 0 10px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="time"],
+        select {
+            width: 250px;
+            padding: 6px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        select[multiple] {
+            height: 100px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button[type="reset"] {
+            background-color: #f44336;
+            color: white;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        .final-check {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<img src="imagen.png" alt="Logo del centro" width="200">
+
+<form>
+
+<!-- DATOS PERSONALES -->
+<fieldset>
+    <legend><strong>DATOS PERSONALES</strong></legend>
+
+    Nombre:<br>
+    <input type="text"><br><br>
+
+    Apellidos:<br>
+    <input type="text"><br><br>
+
+    Apodo:<br>
+    <input type="text"><br><br>
+
+    Usuario:<br>
+    <input type="text"><br><br>
+
+    Contraseña:<br>
+    <input type="password"><br><br>
+
+    Teléfono:<br>
+    <input type="text"><br><br>
+
+    Email:<br>
+    <input type="email"><br><br>
+
+    Fecha de nacimiento:<br>
+    <input type="number" min="1" max="31"> /
+    <select>
+        <option>Enero</option>
+        <option>Febrero</option>
+        <option>Marzo</option>
+        <option>Abril</option>
+        <option>Mayo</option>
+        <option>Junio</option>
+        <option>Julio</option>
+        <option>Agosto</option>
+        <option>Septiembre</option>
+        <option>Octubre</option>
+        <option>Noviembre</option>
+        <option>Diciembre</option>
+    </select> /
+    <input type="number" min="1990" max="2024"><br><br>
+
+    Últimos estudios completados:<br>
+    <select multiple>
+        <option>E.S.O.</option>
+        <option>F.P.B.</option>
+        <option>C.F.G.M.</option>
+        <option>C.F.G.S.</option>
+        <option>Universitarios</option>
+        <option>Otros</option>
+    </select><br><br>
+
+    Suba una foto tamaño DNI:<br>
+    <input type="file"><br><br>
+
+    Carnet de conducir:<br>
+    <input type="radio" name="carnet"> Sí
+    <input type="radio" name="carnet"> No
+</fieldset>
+
+<!-- DATOS DE LOS PADRES -->
+<fieldset>
+    <legend><strong>DATOS DE LOS PADRES</strong></legend>
+
+    Nombre del padre:<br>
+    <input type="text"><br><br>
+
+    Estudios:<br>
+    <select>
+        <option>Sin información</option>
+        <option>Formación Básica</option>
+        <option>Secundaria</option>
+        <option>Universitaria</option>
+    </select><br><br>
+
+    Situación laboral:<br>
+    <select>
+        <option>Autónomo</option>
+        <option>En paro</option>
+        <option>Cuenta ajena</option>
+        <option>Hogar</option>
+    </select><br><br>
+
+    Nombre de la madre:<br>
+    <input type="text"><br><br>
+
+    Estudios:<br>
+    <select>
+        <option>Sin información</option>
+        <option>Formación Básica</option>
+        <option>Secundaria</option>
+        <option>Universitaria</option>
+    </select><br><br>
+
+    Situación laboral:<br>
+    <select>
+        <option>Autónomo</option>
+        <option>En paro</option>
+        <option>Cuenta ajena</option>
+        <option>Hogar</option>
+    </select>
+</fieldset>
+
+<!-- OPCIONES ACADÉMICAS -->
+<fieldset>
+    <legend><strong>OPCIONES ACADÉMICAS</strong></legend>
+
+    Especialidad:<br>
+    <input type="radio" name="grado"> SMIR
+    <input type="radio" name="grado"> ASIR
+    <input type="radio" name="grado"> DAM
+    <input type="radio" name="grado"> DAW<br><br>
+
+    Horario:<br>
+    <select>
+        <option>Mañana</option>
+        <option>Tarde</option>
+        <option>Nocturno</option>
+        <option>Indiferente</option>
+    </select><br><br>
+
+    Idioma:<br>
+    <select>
+        <option>Modelo A</option>
+        <option>Modelo B</option>
+        <option>Modelo C</option>
+        <option>Indiferente</option>
+    </select><br><br>
+
+    Asignaturas opcionales:<br>
+    <input type="checkbox"> Lengua
+    <input type="checkbox"> Matemáticas
+    <input type="checkbox"> Historia
+    <input type="checkbox"> Geografía<br><br>
+
+    Hora de la cita:<br>
+    <input type="time"><br><br>
+
+    Fecha de la cita:<br>
+    <input type="date">
+</fieldset>
+
+<div class="final-check">
+    <input type="checkbox"> Confirmar selecciones y aceptar condiciones
+</div>
+
+<button type="submit">Guardar y Enviar</button>
+<button type="reset">Borrar</button>
+
+</form>
+
+</body>
 </html>
+
